@@ -11,11 +11,16 @@ class ScoutContent extends Component {
 <Form>
 
 <Form.Group as={Row} controlId="formCompetition">
-  <Form.Label column xs="2"></Form.Label>
+  <Form.Label column xs="2">
+    Which <br></br>
+    Event
+  </Form.Label>
   <Col xs="6">
     <Form.Control as="select">
       <option>Hudson</option>
        <option>Long Island</option>
+       <option> New York City</option>
+      
     </Form.Control>
   </Col>
   </Form.Group>
