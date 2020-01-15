@@ -7,63 +7,31 @@ import Col from 'react-bootstrap/Col';
 class ScoutContent extends Component {
 
     render () {
-        return (
-<Form>
-
-<Form.Group as={Row} controlId="formCompetition">
-  <Form.Label column xs="2">
-    Which <br></br>
-    Event
-  </Form.Label>
-  <Col xs="6">
-    <Form.Control as="select">
-      <option>Hudson</option>
-       <option>Long Island</option>
-       <option> New York City</option>
-      
-    </Form.Control>
-  </Col>
-  </Form.Group>
-  
-  <Form.Group as={Row} controlId="formTeamNum">
-    <Form.Label column xs="2">
-      Team Number
-    </Form.Label>
-    <Col xs="9">
-      <Form.Control type="text" placeholder="Team Number" />
-    </Col>
-  </Form.Group>
-
-  <Form.Group as={Row} controlId="formMatchNum">
-    <Form.Label column xs="2">
-      Match Number
-    </Form.Label>
-    <Col xs="9">
-      <Form.Control type="text" placeholder="Match Number" />
-    </Col>
-  </Form.Group>
-
-  <Form.Group as={Row} controlId="formAuto">
-    <Form.Label column xs="2">
-      Auto
-    </Form.Label>
-    <Col xs="1">
-    <Form.Check 
-    custom
-    type="switch"
-    label=""
-  />
-    </Col>
-  </Form.Group>
-
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form>
+      return (
+        <Form className="Scouter-form">
+          <div className="SC-main-div">
+          <div className="SC-form">
+            <Form.Group as={Row} controlId="SC form group">
+            <Form.Label className="mb-3">
+              Event: 
+            </Form.Label>
+            <Form.Control className="mb-3" required as="select">
+              <option>HVR</option>
+              <option>SBPLI</option>
+              <option>NYC</option>
+            </Form.Control>
+            </Form.Group>
+          
+          
+          </div>
+          </div>
 
 
-        );
-       }
-    }
+        </Form>
+
+
+      );
+   }
+}
     
     export default ScoutContent;
